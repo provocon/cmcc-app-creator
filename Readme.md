@@ -2,7 +2,7 @@
 ```shell script
 ./createCmccAppFolderStructure.sh EXISTING-TARGET-DIRECTORY APP-NAME
 ```                         
-##Function
+## Function
 The script creates the following basic sub folder structure with maven poms and a Dockerfile for an app inside of the
 [CoreMedia Content Cloud 10 - Blueprint Workspace](https://github.com/coremedia-contributions/coremedia-blueprints-workspace/tree/cmcc-10-1907):
 ```
