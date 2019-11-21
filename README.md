@@ -38,7 +38,7 @@ Workspace:
     └── pom.xml
 ```
 
-The [base workspace itself is available in from CoreMedia][coremedia--blueprints]. 
+The [base workspace itself is available in from CoreMedia][coremedia-blueprints]. 
 Please consult the [Product Homepage][coremedia].
 
 [coremedia]: https://www.coremedia.com/
