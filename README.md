@@ -43,6 +43,6 @@ The [base workspace itself is available in from CoreMedia][coremedia-blueprints]
 Please consult the [Product Homepage][coremedia].
 
 [coremedia]: https://www.coremedia.com/
-[coremedia-prints]: https://github.com/coremedia-contributions/coremedia-blueprints-workspace/tree/cmcc-10-1907
+[coremedia-blueprints]: https://github.com/coremedia-contributions/coremedia-blueprints-workspace/tree/cmcc-10-1907
 [issues]: https://github.com/blackappsolutions/cmccAppCreator/issues
 [github]: https://github.com/
