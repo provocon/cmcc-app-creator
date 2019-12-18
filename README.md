@@ -11,8 +11,14 @@ the usual [github][github] means.
 ## Usage
 
 ```
-./app-create.sh EXISTING-TARGET-DIRECTORY APP-NAME
-```    
+./app-create.sh TARGET-DIRECTORY APP-NAME
+```
+
+The target directory might be the pre-existing directory suitable for the new
+app with the given name, or the apps directory or even the root directory of
+your CoreMedia Content Cloud 10 Workspace.
+
+If the app's directory does not exist, it gets created.
 
 ## Function
 
