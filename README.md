@@ -34,7 +34,7 @@ pom.xml
 ├── modules
 │   └── pom.xml
 └── spring-boot
-    ├── APP_NAME-app (with scr/main/[java|resources] biolderplates 
+    ├── APP_NAME-app (with scr/main/[java|resources] boilerplates 
     │   └── pom.xml
     └── pom.xml
 ```
