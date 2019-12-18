@@ -42,11 +42,14 @@ createFolderAndReplacePom() {
   cd "$TARGET_DIR" || exit
 
   createFolderAndReplacePom "${NEW_APP_NAME}"-blueprint-bom blueprint-bom
+  createFolderAndReplacePom .
   createFolderAndReplacePom blueprint-parent
   createFolderAndReplacePom modules
+  createFolderAndReplacePom docker
+  createFolderAndReplacePom docker/"$NEW_APP_NAME" docker-app
+  sed "s/##APP_NAME##/${NEW_APP_NAME}/g" "$SCRIPT_TEMPLATE_FOLDER"/templates/docker-app/Dockerfile > docker/"$NEW_APP_NAME"/Dockerfile
+
   createFolderAndReplacePom spring-boot
   createFolderAndReplacePom spring-boot/"$NEW_APP_NAME"-app spring-boot-app
-  createFolderAndReplacePom docker
-  createFolderAndReplacePom docker/"$NEW_APP_NAME"-app docker-app
-  sed "s/##APP_NAME##/${NEW_APP_NAME}/g" "$SCRIPT_TEMPLATE_FOLDER"/templates/docker-app/Dockerfile > docker/"$NEW_APP_NAME"-app/Dockerfile
+  cp -r "$SCRIPT_TEMPLATE_FOLDER"/templates/spring-boot-app/src spring-boot/"$NEW_APP_NAME"-app
 )

@@ -20,20 +20,21 @@ The script creates the following basic sub folder structure with maven poms
 and a Dockerfile for an app inside of the CoreMedia Content Cloud 10 Blueprints
 Workspace:
 
-```
+```    
+pom.xml
 ├── blueprint-parent
 │   └── pom.xml
 ├── docker
-│   ├── importer-app
+│   ├── APP_NAME-app
 │   │   ├── Dockerfile
 │   │   └── pom.xml
 │   └── pom.xml
-├── importer-blueprint-bom
+├── APP_NAME-blueprint-bom
 │   └── pom.xml
 ├── modules
 │   └── pom.xml
 └── spring-boot
-    ├── importer-app
+    ├── APP_NAME-app (with scr/main/[java|resources] biolderplates 
     │   └── pom.xml
     └── pom.xml
 ```
