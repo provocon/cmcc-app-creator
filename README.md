@@ -11,8 +11,14 @@ the usual [github][github] means.
 ## Usage
 
 ```
-./app-create.sh EXISTING-TARGET-DIRECTORY APP-NAME
-```    
+./app-create.sh TARGET-DIRECTORY APP-NAME
+```
+
+The target directory might be the pre-existing directory suitable for the new
+app with the given name, or the apps directory or even the root directory of
+your CoreMedia Content Cloud 10 Workspace.
+
+If the app's directory does not exist, it gets created.
 
 ## Function
 
@@ -39,10 +45,10 @@ pom.xml
     └── pom.xml
 ```
 
-The [base workspace itself is available in from CoreMedia][coremedia--blueprints]. 
+The [base workspace itself is available in from CoreMedia][coremedia-blueprints]. 
 Please consult the [Product Homepage][coremedia].
 
 [coremedia]: https://www.coremedia.com/
-[coremedia-prints]: https://github.com/coremedia-contributions/coremedia-blueprints-workspace/tree/cmcc-10-1907
+[coremedia-blueprints]: https://github.com/coremedia-contributions/coremedia-blueprints-workspace/tree/cmcc-10-1907
 [issues]: https://github.com/blackappsolutions/cmccAppCreator/issues
 [github]: https://github.com/
