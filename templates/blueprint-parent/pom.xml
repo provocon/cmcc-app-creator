@@ -30,7 +30,7 @@
 
     <customer>Blueprint</customer>
 
-    <cm.##APP_NAME##.core.version>1907.2</cm.##APP_NAME##.core.version>
+    <cm.##APP_NAME##.core.version>1907.3</cm.##APP_NAME##.core.version>
 
     <spring.boot.version>2.1.6.RELEASE</spring.boot.version>
     <application-plugin.version>2.7.10</application-plugin.version>
@@ -81,10 +81,10 @@
     <blueprint.groupId>com.coremedia.blueprint</blueprint.groupId>
     <!-- keep this version in sync with this poms parent version -->
     <blueprint.version>${project.version}</blueprint.version>
-    <cm.##APP_NAME##.core.version>1907.2</cm.##APP_NAME##.core.version>
-    <cm.common.core.version>1907.2</cm.common.core.version>
+    <cm.##APP_NAME##.core.version>1907.3</cm.##APP_NAME##.core.version>
+    <cm.common.core.version>1907.3</cm.common.core.version>
     <cm.common.bp.version>1-SNAPSHOT</cm.common.bp.version>
-    <cm.middle.core.version>1907.2</cm.middle.core.version>
+    <cm.middle.core.version>1907.3</cm.middle.core.version>
     <cm.middle.bp.version>1-SNAPSHOT</cm.middle.bp.version>
   </properties>
 
@@ -207,22 +207,7 @@
 
   <dependencyManagement>
     <dependencies>
-      <dependency>
-        <groupId>com.coremedia.cms</groupId>
-        <artifactId>##APP_NAME##-core-bom</artifactId>
-        <version>${cm.##APP_NAME##.core.version}</version>
-        <type>pom</type>
-        <scope>import</scope>
-      </dependency>
-      <dependency>
-        <groupId>com.coremedia.cms</groupId>
-        <artifactId>##APP_NAME##-thirdparty-bom</artifactId>
-        <version>${cm.##APP_NAME##.core.version}</version>
-        <type>pom</type>
-        <scope>import</scope>
-      </dependency>
-
-
+      
       <dependency>
         <groupId>com.google.apis</groupId>
         <artifactId>google-api-services-youtube</artifactId>
@@ -310,6 +295,15 @@
         <groupId>org.apache.tomcat.embed</groupId>
         <artifactId>tomcat-embed-jasper</artifactId>
         <version>${tomcat.embed.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-starter-tomcat</artifactId>
+        <version>${spring.boot.version}</version>
+        <!-- Intentionally not excluding transitive dependency to javax.annotation:javax.annotation-api here,
+             although we have banned that dependency and use jakarta.annotation:jakarta.annotation-api instead:
+             The exclusion is added at dependency usages in combination with the replacement dependency.
+             If we'd add the exclusion here, we'd probably forget to add the replacement dependency. -->
       </dependency>
       <dependency>
         <groupId>org.springframework.boot</groupId>
