@@ -30,7 +30,7 @@
 
     <customer>Blueprint</customer>
 
-    <cm.##APP_NAME##.core.version>1910.1</cm.##APP_NAME##.core.version>
+    <cm.##APP_NAME##.core.version>2001.2</cm.##APP_NAME##.core.version>
 
     <spring.boot.version>2.1.6.RELEASE</spring.boot.version>
     <application-plugin.version>2.7.10</application-plugin.version>
@@ -81,10 +81,10 @@
     <blueprint.groupId>com.coremedia.blueprint</blueprint.groupId>
     <!-- keep this version in sync with this poms parent version -->
     <blueprint.version>${project.version}</blueprint.version>
-    <cm.##APP_NAME##.core.version>1910.1</cm.##APP_NAME##.core.version>
-    <cm.common.core.version>1910.1</cm.common.core.version>
+    <cm.##APP_NAME##.core.version>2001.2</cm.##APP_NAME##.core.version>
+    <cm.common.core.version>2001.2</cm.common.core.version>
     <cm.common.bp.version>1-SNAPSHOT</cm.common.bp.version>
-    <cm.middle.core.version>1910.1</cm.middle.core.version>
+    <cm.middle.core.version>2001.2</cm.middle.core.version>
     <cm.middle.bp.version>1-SNAPSHOT</cm.middle.bp.version>
   </properties>
 
