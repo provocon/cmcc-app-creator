@@ -15,7 +15,7 @@
 # limitations under the License.
 #
 if [ $# -ne 2 ]; then
-  echo "      $0 CMCC-TARGET-DIRECTORY APP-NAME"
+  echo "      $0 EXISTING-TARGET-DIRECTORY APP-NAME"
   echo "e.g.: $0 ~/importer-component importer"
   exit 1
 fi
@@ -36,24 +36,6 @@ createFolderAndReplacePom() {
   [ -d "$TARGET_FOLDER" ] || mkdir "$TARGET_FOLDER"
   sed "s/##APP_NAME##/${NEW_APP_NAME}/g" "$SCRIPT_TEMPLATE_FOLDER"/templates/"$TEMPLATE_FOLDER"/pom.xml > "$TARGET_FOLDER"/pom.xml
 }
-
-# TARGET_DIR seems to be the workspace root
-if [ -d $TARGET_DIR/workspace-configuration ] ; then
-  if [ -d $TARGET_DIR/apps ] ; then
-    echo "Found CMCC Workspace in $TARGET_DIR."
-    TARGET_DIR=$TARGET_DIR/apps
-  fi
-fi
-
-# TARGET_DIR seems to be the apps root
-if [ -d $TARGET_DIR/content-server ] ; then
-  echo "CMCC Apps reside in $TARGET_DIR."
-  TARGET_DIR=$TARGET_DIR/$NEW_APP_NAME
-  if [ ! -d $TARGET_DIR/$NEW_APP_NAME ] ; then
-    mkdir $TARGET_DIR
-    echo "New App Directory created as $TARGET_DIR."
-  fi
-fi
 
 # https://github.com/koalaman/shellcheck/wiki/SC2103#use-a--subshell--to-avoid-having-to-cd-back
 (
