@@ -1,18 +1,18 @@
 # CoreMedia Content Cloud App Stub Preparation
 
-The script in this repository can be used to add new custom apps to your 
+The script in this repository can be used to add new custom apps to your
 CoreMedia Content Cloud Blueprints Workspace.
 
 ## Status and Feedback
 
-This is just a starting point. Please contribute or give [feedback][issues] via 
+This is just a starting point. Please contribute or give [feedback][issues] via
 the usual [github][github] means.
 
 ## Usage
 
 ```
 ./app-create.sh EXISTING-TARGET-DIRECTORY APP-NAME
-```               
+```
 
 ## Sample
 
@@ -24,7 +24,7 @@ cd cmccAppCreator
 
 ## Function
 
-The script creates the following basic sub folder structure with maven poms 
+The script creates the following basic sub folder structure with maven poms
 and a Dockerfile for an app inside of the CoreMedia Content Cloud 10 Blueprints
 Workspace:
 

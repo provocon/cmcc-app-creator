@@ -4,7 +4,7 @@
 
   <!--
       You will need to change the groupId in all modules
-      A global search&replace will do the job !
+      A global search&replace will do the job!
   -->
   <groupId>com.coremedia.blueprint</groupId>
   <artifactId>##APP_NAME##.blueprint-parent</artifactId>
@@ -275,7 +275,7 @@
 
   <dependencyManagement>
     <dependencies>
-      
+
       <dependency>
         <groupId>com.google.apis</groupId>
         <artifactId>google-api-services-youtube</artifactId>
