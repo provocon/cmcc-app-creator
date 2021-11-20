@@ -2,14 +2,14 @@
   <modelVersion>4.0.0</modelVersion>
 
   <!--
-      Maybe you will need to change the groupId in all modules
-      A global search&replace will do the job !
+      You will need to change the groupId in all modules
+      A global search&replace will do the job!
   -->
   <groupId>com.coremedia.blueprint</groupId>
   <artifactId>##APP_NAME##.blueprint</artifactId>
   <version>1-SNAPSHOT</version>
   <packaging>pom</packaging>
-  <description>CoreMedia CMS Blueprint App created by https://github.com/blackappsolutions/cmccAppCreator</description>
+  <description>CoreMedia CMS Blueprint App created with App Creator</description>
 
   <organization>
     <name>Blueprint</name>

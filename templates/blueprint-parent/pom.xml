@@ -31,10 +31,10 @@
 
     <customer>Blueprint</customer>
 
-    <cm.##APP_NAME##.core.version>2004.2</cm.##APP_NAME##.core.version>
+    <cm.##APP_NAME##.core.version>2107.3</cm.##APP_NAME##.core.version>
 
-    <spring.boot.version>2.2.6.RELEASE</spring.boot.version>
-    <application-plugin.version>2.8.3</application-plugin.version>
+    <spring.boot.version>2.3.11.RELEASE</spring.boot.version>
+    <application-plugin.version>3.0.1</application-plugin.version>
 
     <!--
     | the following *.host properties are defined here for convenience, so that they can be overridden
@@ -82,10 +82,10 @@
     <blueprint.groupId>com.coremedia.blueprint</blueprint.groupId>
     <!-- keep this version in sync with this poms parent version -->
     <blueprint.version>${project.version}</blueprint.version>
-    <cm.##APP_NAME##.core.version>2004.2</cm.##APP_NAME##.core.version>
-    <cm.common.core.version>2004.2</cm.common.core.version>
+    <cm.##APP_NAME##.core.version>2107.3</cm.##APP_NAME##.core.version>
+    <cm.common.core.version>2107.3</cm.common.core.version>
     <cm.common.bp.version>1-SNAPSHOT</cm.common.bp.version>
-    <cm.middle.core.version>2004.2</cm.middle.core.version>
+    <cm.middle.core.version>2107.3</cm.middle.core.version>
     <cm.middle.bp.version>1-SNAPSHOT</cm.middle.bp.version>
     <maven-surefire-plugin.version>3.0.0-M3</maven-surefire-plugin.version>
 
@@ -154,7 +154,7 @@
               <dependency>
                 <groupId>com.coremedia.maven</groupId>
                 <artifactId>coremedia-enforcer-rules</artifactId>
-                <version>1.1.17</version>
+                <version>1.2.1</version>
               </dependency>
               <dependency>
                 <groupId>com.coremedia.cms</groupId>
@@ -339,7 +339,7 @@
       <dependency>
         <groupId>org.codehaus.groovy</groupId>
         <artifactId>groovy-all</artifactId>
-        <version>2.4.16</version>
+        <version>2.4.21</version>
         <classifier>indy</classifier>
       </dependency>
 
@@ -426,7 +426,7 @@
         <plugin>
           <groupId>org.apache.maven.plugins</groupId>
           <artifactId>maven-assembly-plugin</artifactId>
-          <version>3.1.0</version>
+          <version>3.3.0</version>
         </plugin>
         <plugin>
           <groupId>org.apache.maven.plugins</groupId>
@@ -484,7 +484,7 @@
         <plugin>
           <groupId>org.apache.maven.plugins</groupId>
           <artifactId>maven-jar-plugin</artifactId>
-          <version>3.1.0</version>
+          <version>3.2.0</version>
           <configuration>
             <archive>
               <addMavenDescriptor>true</addMavenDescriptor>
@@ -510,7 +510,7 @@
         <plugin>
           <groupId>org.apache.maven.plugins</groupId>
           <artifactId>maven-javadoc-plugin</artifactId>
-          <version>3.1.1</version>
+          <version>3.2.0</version>
           <configuration>
             <doclint>none</doclint>
           </configuration>
@@ -518,7 +518,7 @@
         <plugin>
           <groupId>org.apache.maven.plugins</groupId>
           <artifactId>maven-resources-plugin</artifactId>
-          <version>3.1.0</version>
+          <version>3.2.0</version>
           <configuration>
             <includeEmptyDirs>true</includeEmptyDirs>
           </configuration>
@@ -541,7 +541,7 @@
         <plugin>
           <groupId>org.apache.maven.plugins</groupId>
           <artifactId>maven-source-plugin</artifactId>
-          <version>3.0.1</version>
+          <version>3.2.1</version>
         </plugin>
         <plugin>
           <groupId>org.apache.maven.plugins</groupId>
@@ -580,7 +580,7 @@
                 <X-Compile-Target-JDK>${maven.compiler.release}</X-Compile-Target-JDK>
                 <!-- Configure WebSphere to not scan ASM jars in the WAR, because they contain Java 9 module-info.class
                      files and cause exceptions in WebSphere. See CMS-12354 -->
-                <Ignore-Scanning-Archives>asm-analysis-8.0.1.jar,asm-8.0.1.jar,asm-commons-8.0.1.jar,asm-tree-8.0.1.jar</Ignore-Scanning-Archives>
+                <Ignore-Scanning-Archives>asm-analysis-9.1.jar,asm-9.1.jar,asm-commons-9.1.jar,asm-tree-9.1.jar</Ignore-Scanning-Archives>
               </manifestEntries>
             </archive>
             <failOnMissingWebXml>false</failOnMissingWebXml>
