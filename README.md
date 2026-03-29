@@ -5,8 +5,15 @@ CoreMedia Content Cloud Blueprints Workspace.
 
 ## Status and Feedback
 
-This is just a starting point. Please contribute or give [feedback][issues] via
-the usual [github][github] means.
+This was just a starting point to add another component to the apps section
+of the Blueprints Workspace, which should be considered a project specific
+addition handled the same way as the other components in the workspace.
+
+With currect architecture situations and the CMCC on cloud services, this can
+be at least considered in state "handle with care" not to say "most likely not
+recommended for new projects".
+
+Please contribute or give [feedback][issues] via the usual [GitHub][github] means.
 
 ## Usage
 
